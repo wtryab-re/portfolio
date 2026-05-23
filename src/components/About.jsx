@@ -19,26 +19,37 @@ export default function About() {
     },
   ];
 
+  const about = [
+    `  I'm Warda, a third culture child, Pakistani with a hint of Emirati.
+            I started computer science in university because my dad wanted me to
+            do it.
+            `,
+    `My dream company to work for is Netflix, not because its a big tech
+            company that probably pays super well but because I love media -- TV
+            shows, movies, anime, cartoons, comics, manga, books, art.
+            `,
+    `my interests I'm into archery, poetry, art, tennis, volleyball. I
+            like acting too, so maybe one day you'll see me on a Netflix show?
+            `,
+    `But most importantly I love learning about new things, in my heart
+            of hearts I am an academic. I'd probably be one forever if I could.
+          
+       `,
+  ];
+
   return (
-    <section id="about" className="bg-slate-50 py-12 px-6">
+    <section id="about" className=" py-12 px-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-slate-800">about me</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 bg-amber-300">
-        <p className="bg-red-50">
-          I'm Warda, a third culture child, Pakistani with a hint of Emirati. I
-          started computer science in university because my dad wanted me to do
-          it. eventually I became engulfed in it to be good. My dream company to
-          work for is Netflix, not because its a big tech company that probably
-          pays super well but because I love media -- TV shows, movies, anime,
-          cartoons, comics, manga, books, art. my interests I'm into archery,
-          poetry, art, tennis, volleyball. I like acting too, so maybe one day
-          you'll see me on a Netflix show? But most importantly I love learning
-          about new things, in my heart of hearts I am an academic. I'd probably
-          be one forever if I could.
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <p className="  md:text-base text-sm">
+          {about.map((t) => {
+            return <span className="pb-4 block">{t}</span>;
+          })}
         </p>
 
-        <div className="m-auto w-1/2">
+        <div className=" md:w-full">
           <FlippableCard work_exp={work_exp} />
         </div>
       </div>

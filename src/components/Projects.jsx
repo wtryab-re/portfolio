@@ -26,7 +26,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="bg-red-200">
+    <section id="projects" className="px-20">
       <div className="py-12 px-6">
         <p className="text-4xl font-bold mb-8">things I've made</p>
 
