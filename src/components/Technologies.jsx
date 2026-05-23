@@ -29,7 +29,7 @@ export default function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="bg-slate-50 py-12 px-20">
+    <section id="technologies" className="py-12 px-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold  mb-8 text-slate-800">
           technologies
@@ -40,7 +40,7 @@ export default function Technologies() {
           {techs.map((tech, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center py-4 px-2 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow h-28"
+              className="flex flex-col items-center justify-center py-4 px-2 rounded-xl shadow-sm hover:shadow-md transition-shadow h-28"
             >
               {tech.icon}
               <p className="mt-2 font-medium text-slate-700 text-center text-xs sm:text-sm truncate w-full px-1">

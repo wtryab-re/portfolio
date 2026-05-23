@@ -46,7 +46,7 @@ export default function FlippableCard({ work_exp }) {
               <span>Education</span>
             </div>
             <div className="bg-default/10 rounded-lg p-3 border border-default/30">
-              <p className="text-xs font-semibold text-heading">
+              <p className="text-sm font-semibold text-heading">
                 B.S. Computer Science
               </p>
               <p className="text-[11px] text-sm mt-0.5">
@@ -85,14 +85,14 @@ export default function FlippableCard({ work_exp }) {
                     <li key={index} className="py-3 first:pt-0 last:pb-0">
                       <div className="flex items-start justify-between gap-4">
                         <div className="flex-1 min-w-0">
-                          <p className="text-xs font-semibold text-heading truncate">
+                          <p className="text-sm font-semibold text-heading truncate">
                             {role}
                           </p>
-                          <p className="text-[11px] text-body truncate mt-0.5">
+                          <p className="text-sm text-body truncate mt-0.5">
                             {org}
                           </p>
                         </div>
-                        <div className="text-[10px] text-body/80 font-mono shrink-0 whitespace-nowrap pt-0.5">
+                        <div className="text-xs text-body/80 font-mono shrink-0 whitespace-nowrap pt-0.5">
                           {time}
                         </div>
                       </div>
