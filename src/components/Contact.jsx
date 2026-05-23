@@ -32,7 +32,12 @@ export default function Contact() {
         <h2 className="text-4xl font-bold mb-8 text-slate-800">contact me</h2>
       </div>
       <div>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4" netlify>
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4"
+          netlify
+          data-netlify="true"
+        >
           {/* Essential hidden field for React bot crawlers */}
           <input type="hidden" name="form-name" value="contact" />
 

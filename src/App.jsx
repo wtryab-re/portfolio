@@ -25,7 +25,12 @@ export default function App() {
     say hello section that has a contact me form -- shows that ik backend-- link it to my email
 
     footer with email, github, linkedin, and twitter icons that link to the respective profiles
+    
     made with love
+    
+    load after all assets are loaded
+    
+    
     */
   }
   return (
