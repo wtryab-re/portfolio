@@ -6,7 +6,7 @@ export default function Projects() {
       what_i_did:
         "Trained & evaluated the model. Designed & created all the web and mobile app interfaces",
       tech_used: "python, react, react native, expo",
-      image_url: "",
+      image_url: "stock.jpg",
     },
     {
       title: "Agent Forge 2.0",
@@ -14,14 +14,14 @@ export default function Projects() {
       what_i_did:
         "manual testing, documentation, created an insightful frontend of the admin panel",
       tech_used: "python, react, typescript",
-      image_url: "",
+      image_url: "stock.jpg",
     },
     {
       title: "Spite Study",
       desc: "This platform gamifies working, forces you to work with spite and holds you accountable for your procrastination",
       what_i_did: "Ongoing project",
       tech_used: "react native, firebase, computer vision", // Fixed typo here
-      image_url: "",
+      image_url: "stock.jpg",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function Projects() {
         <p className="text-4xl font-bold mb-8">things I've made</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {card_data.map(({ title, desc, tech_used }, index) => (
+          {card_data.map(({ title, desc, tech_used, image_url }, index) => (
             // Always provide a unique 'key' when rendering lists in React
             <div
               key={index}
@@ -39,8 +39,8 @@ export default function Projects() {
             >
               <a>
                 <img
-                  className="rounded-base"
-                  src="src/assets/favicon.png"
+                  className="rounded-xl w-full max-h-50 mask-cover hidden md:block"
+                  src={image_url}
                   alt=""
                 />
               </a>
@@ -58,12 +58,8 @@ export default function Projects() {
 
         <p className="mt-8 text-center">
           Check out more on{" "}
-          <a
-            href="https://www.github.com"
-            target="_blank"
-            className="hover:font-bold transition duration-100"
-          >
-            Github
+          <a href="https://www.github.com" target="_blank" className="">
+            <span className="underline">Github</span>
           </a>
         </p>
       </div>

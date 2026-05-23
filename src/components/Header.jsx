@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header class="fixed top-3 left-0 w-full z-10 flex justify-center p-2 text-xs">
       <div
-        class="p-4 backdrop-blur-xs bg-white/30
+        class="p-4 backdrop-blur-xs bg-white/40
  rounded-full"
       >
         <ul class="flex space-x-8 ">{create_li()}</ul>
