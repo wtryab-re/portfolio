@@ -37,7 +37,7 @@ export default function App() {
   return (
     <>
       <div className="fixed inset-0 z-[-100] ">
-        <Toaster />
+        <Toaster position="bottom-center" reverseOrder={false} />
         {/* <CinematicBackground></CinematicBackground> */}
         <Background_GIF />
       </div>
