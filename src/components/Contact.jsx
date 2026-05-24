@@ -22,7 +22,11 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formData }),
     })
-      .then(() => alert("Message sent successfully!"))
+      .then(() => {
+        alert("Message sent successfully!");
+        // Clear form after successful submit
+        setFormData({ name: "", email: "", message: "" });
+      })
       .catch((error) => alert(error));
   };
 
@@ -32,10 +36,12 @@ export default function Contact() {
         <h2 className="text-4xl font-bold mb-8 text-slate-800">contact me</h2>
       </div>
       <div>
+        {/* FIX: Added name="contact" below */}
         <form
+          name="contact"
+          method="POST"
           onSubmit={handleSubmit}
           className="flex flex-col gap-4"
-          netlify
           data-netlify="true"
         >
           {/* Essential hidden field for React bot crawlers */}
@@ -45,12 +51,14 @@ export default function Contact() {
             type="text"
             name="name"
             placeholder="Name"
+            value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
+            value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
@@ -58,6 +66,7 @@ export default function Contact() {
           <textarea
             name="message"
             placeholder="Message"
+            value={formData.message}
             onChange={(e) =>
               setFormData({ ...formData, message: e.target.value })
             }
