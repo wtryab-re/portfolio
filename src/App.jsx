@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 //import CinematicBackground from "./components/CinematicBackground";
 import Background_GIF from "./components/Background_GIF";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function App() {
   {
@@ -36,6 +37,7 @@ export default function App() {
   return (
     <>
       <div className="fixed inset-0 z-[-100] ">
+        <Toaster />
         {/* <CinematicBackground></CinematicBackground> */}
         <Background_GIF />
       </div>

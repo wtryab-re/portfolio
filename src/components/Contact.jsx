@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import toast, { Toaster } from "react-hot-toast";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,11 +23,11 @@ export default function Contact() {
       body: encode({ "form-name": "contact", ...formData }),
     })
       .then(() => {
-        alert("Message sent successfully!");
+        toast.success("Message Sent Successfully!");
         // Clear form after successful submit
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch((error) => alert(error));
+      .catch(() => toast.error("Message unable to send. Try Again Later"));
   };
 
   return (
