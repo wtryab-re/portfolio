@@ -7,6 +7,8 @@ export default function Contact() {
     message: "",
   });
 
+  const [isSending, setisSending] = useState(false);
+
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -17,6 +19,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setisSending(true);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -24,37 +27,39 @@ export default function Contact() {
     })
       .then(() => {
         toast.success("Message Sent Successfully!");
-        // Clear form after successful submit
         setFormData({ name: "", email: "", message: "" });
+        setisSending(false);
       })
       .catch(() => toast.error("Message unable to send. Try Again Later"));
   };
 
   return (
-    <section id="contact" className=" bg-red-100 py-6 px-20">
+    <section id="contact" className=" py-6 px-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-slate-800">contact me</h2>
       </div>
       <div>
-        {/* FIX: Added name="contact" below */}
         <form
           name="contact"
           method="POST"
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4"
+          className="flex rounded-xl flex-col gap-4 border p-2"
           data-netlify="true"
         >
-          {/* Essential hidden field for React bot crawlers */}
           <input type="hidden" name="form-name" value="contact" />
 
           <input
             type="text"
             name="name"
             placeholder="Name"
+            required
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            className="border p-2 rounded-full"
           />
           <input
+            className="border rounded-full p-2"
+            required
             type="email"
             name="email"
             placeholder="Email"
@@ -64,6 +69,8 @@ export default function Contact() {
             }
           />
           <textarea
+            className="border rounded-xl p-2"
+            required
             name="message"
             placeholder="Message"
             value={formData.message}
@@ -71,7 +78,13 @@ export default function Contact() {
               setFormData({ ...formData, message: e.target.value })
             }
           />
-          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            disabled={isSending}
+            className="disabled:opacity-75 disabled:cursor-not-allowed cursor-pointer rounded-full hover:bg-blue-300 transition duration-200 border p-2"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </section>

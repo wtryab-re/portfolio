@@ -8,6 +8,11 @@ export default function About() {
       time: "Jul 2025 - Dec 2025",
     },
     {
+      role: "Data Annotation Engineer",
+      org: "NeuraGeek",
+      time: "Mar 2025 - Apr 2025",
+    },
+    {
       role: "Data Engineer Intern",
       org: "Solidus AiTech",
       time: "Jul 2024 - Dec 2024",
@@ -21,14 +26,14 @@ export default function About() {
 
   const about = [
     `  I'm Warda, a third culture child, Pakistani with a hint of Emirati.
-            I started computer science in university because my dad wanted me to
+            I started computer science because my dad wanted me to
             do it.
             `,
-    `My dream company to work for is Netflix, not because its a big tech
-            company that probably pays super well but because I love media -- TV
-            shows, movies, anime, cartoons, comics, manga, books, art.
+    `I've always wanted to visit the the Netherlands because they have fields of my favourite flower - tulips`,
+    `My dream company to work for is Netflix,  because I love media -- TV
+            shows, movies, anime, cartoons, comics, manga, books, art. Anything that only humans are capable of creating is something I want to be part of.
             `,
-    `my interests I'm into archery, poetry, art, tennis, volleyball. I
+    `I'm into archery, poetry, art, tennis, volleyball. I
             like acting too, so maybe one day you'll see me on a Netflix show?
             `,
     `But most importantly I love learning about new things, in my heart

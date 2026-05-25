@@ -105,7 +105,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class="">Icon</div>
+        <div class="">
+          <video width="640" height="360" autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </>
   );

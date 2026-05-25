@@ -49,7 +49,7 @@ export default function Projects() {
                   {title}
                 </h5>
               </a>
-              <p className="mb-6 text-body h-20">{desc}</p>
+              <p className="text-body h-20 mb-12">{desc}</p>
 
               <p className="mb-6 text-body">{tech_used}</p>
             </div>
