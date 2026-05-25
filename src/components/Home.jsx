@@ -46,8 +46,12 @@ export default function Home() {
 
   return (
     <>
-      <div id="home" class="flex min-h-screen flex-row-reverse  ">
-        <div class=" w-1/2 flex flex-col justify-center gap-4 p-8">
+      <div
+        id="home"
+        class="min-h-screen flex flex-col md:flex-row-reverse items-center justify-evenly pt-20"
+      >
+        {" "}
+        <div class=" flex flex-col justify-center gap-4 p-8">
           <p class="montserrat-fat text-5xl ">Hello, I'm Warda!</p>
           <p>
             <span class="inline-block align-middle text-sm mr-2">
@@ -73,7 +77,7 @@ export default function Home() {
               hello if you want to collaborate on a project!
             </span>
           </p>
-          <div class="flex gap-4 mt-4 max-w-lg">
+          <div class="flex gap-4 mt-4 max-w-lg justify-center ">
             <FaLinkedin
               size={"2.5em"}
               onClick={() =>
@@ -105,8 +109,8 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class="">
-          <video width="640" height="360" autoplay loop muted playsinline>
+        <div className="hidden md:block md:pl-10">
+          <video width="400" height="360" autoplay loop muted playsinline>
             <source src="video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

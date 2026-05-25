@@ -27,7 +27,7 @@ export default function FlippableCard({ work_exp }) {
           <div className="flex flex-col items-center mt-4">
             <div className="w-28 h-28 shrink-0 bg-default/20 border-2 border-default rounded-2xl flex items-center justify-center overflow-hidden shadow-inner mb-4">
               <img
-                src="pixel.png"
+                src="pfp.jpg"
                 alt="Warda"
                 className="w-full h-full object-cover"
               />

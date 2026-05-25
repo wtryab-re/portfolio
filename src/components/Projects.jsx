@@ -18,7 +18,7 @@ export default function Projects() {
     },
     {
       title: "Spite Study",
-      desc: "This platform gamifies working, forces you to work with spite and holds you accountable for your procrastination",
+      desc: "This ongoing project, forces you to work out of spite and holds you accountable for your procrastination",
       what_i_did: "Ongoing project",
       tech_used: "react native, firebase, computer vision", // Fixed typo here
       image_url: "stock.jpg",
