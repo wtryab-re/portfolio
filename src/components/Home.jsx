@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 export default function Home() {
   const location_icon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke="currentColor"
-      class="size-5"
+      className="size-5"
     >
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
       />
       <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
       />
     </svg>
@@ -48,36 +49,41 @@ export default function Home() {
     <>
       <div
         id="home"
-        class="min-h-screen flex flex-col md:flex-row-reverse items-center justify-evenly pt-20"
+        className="min-h-screen flex flex-col md:flex-row-reverse items-center justify-evenly pt-20"
       >
-        {" "}
-        <div class=" flex flex-col justify-center gap-4 p-8">
-          <p class="montserrat-fat text-5xl ">Hello, I'm Warda!</p>
-          <p>
-            <span class="inline-block align-middle text-sm mr-2">
-              {location_icon}
-            </span>
-            <span class="inline-block align-middle text-sm">
-              {currentAddress}
-            </span>
-          </p>
+        <div className="flex flex-col justify-center gap-4 p-8">
+          <p className="montserrat-fat text-5xl ">Hello, I'm Warda!</p>
+          <div className="flex justify-between">
+            <p>
+              <span className="inline-block align-middle text-sm mr-2">
+                {location_icon}
+              </span>
+              <span className="inline-block align-middle text-sm">
+                {currentAddress}
+              </span>
+            </p>
 
-          <p class="montserrat-normal text-lg max-w-lg">
-            {/* I am in pursuit of learning everything and anything. I want to make
-            an everlasting mark on the world through the use of my abilities. */}{" "}
-            <span class="montserrat-normal text-lg max-w-lg block mb-2">
+            <div className="inline-flex items-center mr-5 gap-2 bg-emerald-50/60 rounded-full px-3 py-1 text-xs font-medium text-emerald-800 w-fit mb-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              Available for roles
+            </div>
+          </div>
+
+          <p className="montserrat-normal text-lg max-w-lg">
+            <span className="montserrat-normal text-lg max-w-lg block mb-2">
               I'm a Data Scientist who loves the mathematical nature of the
               universe and occasional full-stack dev.
             </span>
             I also made this portfolio from scratch. Check out my projects below
-            to see how I've helped companies ship better products faster.{" "}
-            <span class="block mt-2">
-              {" "}
-              Currently I am looking for opportunities, so feel free to say
-              hello if you want to collaborate on a project!
+            to see how I've helped companies ship better products faster.
+            <span className="block mt-2">
+              Feel free to say hello if you want to collaborate on a project!
             </span>
           </p>
-          <div class="flex gap-4 mt-4 max-w-lg justify-center ">
+          <div className="flex gap-4 mt-4 max-w-lg justify-center ">
             <FaLinkedin
               size={"2.5em"}
               onClick={() =>
@@ -109,11 +115,43 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="hidden md:block md:pl-10">
-          <video width="400" height="360" autoplay loop muted playsinline>
-            <source src="video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+
+        <div className="hidden md:flex flex-col -mt-18 justify-center gap-6 md:pl-8 w-full max-w-xs">
+          <div>
+            <p className="text-3xl font-extrabold text-blue-900 tracking-tight">
+              Machine Learning
+            </p>
+            <p className="text-[11px] font-mono uppercase tracking-wider text-slate-700 font-bold mt-0.5">
+              Computer Vision Architectures
+            </p>
+          </div>
+
+          <div>
+            <p className="text-3xl font-extrabold text-blue-900 tracking-tight">
+              Full-Stack
+            </p>
+            <p className="text-[11px] font-mono uppercase tracking-wider text-slate-700 font-bold mt-0.5">
+              Product Ownership
+            </p>
+          </div>
+
+          <div>
+            <p className="text-3xl font-extrabold text-blue-900 tracking-tight">
+              Data Governance
+            </p>
+            <p className="text-[11px] font-mono uppercase tracking-wider text-slate-700 font-bold mt-0.5">
+              Privacy Engineering
+            </p>
+          </div>
+
+          <div>
+            <p className="text-3xl font-extrabold text-blue-900 tracking-tight">
+              Management & Training
+            </p>
+            <p className="text-[11px] font-mono uppercase tracking-wider text-slate-700 font-bold mt-0.5">
+              Agile Operations
+            </p>
+          </div>
         </div>
       </div>
     </>

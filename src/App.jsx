@@ -5,50 +5,55 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-//import CinematicBackground from "./components/CinematicBackground";
 import Background_GIF from "./components/Background_GIF";
 import { Toaster } from "react-hot-toast";
+import Loader from "./components/Loader";
+import { useState, useEffect } from "react";
 
 export default function App() {
-  {
-    /*
-    
-    warda-dev
-    sticky floating header with a glass background, only text
-    has home, technologies, projects, about me, contact sections
+  const [isLoading, setisLoading] = useState(true);
+  const [isCanvasReady, setisCanvasReady] = useState(false);
+  const [render, setrender] = useState(false);
 
-    technologies section with icons and names of technologies used in projects
+  useEffect(() => {
+    const handleLoadingSequence = () => {
+      if (isCanvasReady) {
+        setTimeout(() => setrender(true), 200);
+        setTimeout(() => setisLoading(false), 500); // Triggers the fade-out
+      }
+    };
 
-    projects ive made with descriptions, tech stack, and links to github repos and live demos
+    if (document.readyState === "complete") {
+      handleLoadingSequence();
+    } else {
+      const handleWindowLoad = () => handleLoadingSequence();
+      window.addEventListener("load", handleWindowLoad);
+      return () => window.removeEventListener("load", handleWindowLoad);
+    }
+  }, [isCanvasReady]);
 
-    about me section with a short bio and my interests on the left and work experience on the right and profile picture
-    
-    say hello section that has a contact me form -- shows that ik backend-- link it to my email
-
-    footer with email, github, linkedin, and twitter icons that link to the respective profiles
-    
-    made with love
-    
-    load after all assets are loaded
-    
-    
-    */
-  }
   return (
     <>
-      <div className="fixed inset-0 z-[-100] ">
-        <Toaster position="top-right" reverseOrder={false} duration />
-        {/* <CinematicBackground></CinematicBackground> */}
-        <Background_GIF />
-      </div>
-      <Header />
+      <Loader isLoading={isLoading} />
 
-      <Home></Home>
-      <Technologies></Technologies>
-      <Projects></Projects>
-      <About></About>
-      <Contact></Contact>
-      <Footer></Footer>
+      <div className="fixed inset-0 z-[-100]">
+        <Toaster position="top-right" reverseOrder={false} />
+        <Background_GIF setisCanvasReady={setisCanvasReady} />
+      </div>
+
+      {render && (
+        <div
+          className={`transition-opacity duration-700 ${isLoading ? "opacity-0" : "opacity-100"}`}
+        >
+          <Header />
+          <Home />
+          <Technologies />
+          <Projects />
+          <About />
+          <Contact />
+          <Footer />
+        </div>
+      )}
     </>
   );
 }

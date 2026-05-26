@@ -29,7 +29,7 @@ export default function Technologies() {
   ];
 
   return (
-    <section id="technologies" className="py-12 px-20">
+    <section id="technologies" className="py-12 px-20 mb-10">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold  mb-8 text-slate-800">
           technologies

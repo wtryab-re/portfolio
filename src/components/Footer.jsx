@@ -1,5 +1,4 @@
 import toast from "react-hot-toast";
-import Loader from "./Loader";
 
 export default function Footer() {
   const copyData = async () => {
@@ -39,6 +38,7 @@ export default function Footer() {
           hover:scale-120 duration-200
 "
           href="https://www.linkedin.com/in/warda-tayyeb-027602234/"
+          target="_blank"
         >
           LinkedIn
         </a>
@@ -52,7 +52,6 @@ export default function Footer() {
           Github
         </a>
       </div>
-      <Loader></Loader>
       <p className="mt-12 text-xs">Made with love by Warda</p>
     </footer>
   );

@@ -1,6 +1,12 @@
 import { ShaderGradient, ShaderGradientCanvas } from "@shadergradient/react";
-
-export default function Background_GIF() {
+import { useEffect } from "react";
+export default function Background_GIF({ setisCanvasReady }) {
+  useEffect(() => {
+    // This runs exactly once right after the canvas component renders/mounts
+    if (setisCanvasReady) {
+      setisCanvasReady(true);
+    }
+  }, [setisCanvasReady]);
   return (
     <ShaderGradientCanvas>
       <ShaderGradient
@@ -14,7 +20,7 @@ export default function Background_GIF() {
         cPolarAngle={90}
         cameraZoom={1}
         color1="#000dff"
-        color2="#9cffac"
+        color2="#84e098"
         color3="#2bc9e1"
         destination="onCanvas"
         embedMode="off"
@@ -41,7 +47,7 @@ export default function Background_GIF() {
         uAmplitude={1}
         uDensity={1.3}
         uFrequency={5.5}
-        uSpeed={0.3}
+        uSpeed={0.001}
         uStrength={4}
         uTime={0}
         wireframe={false}
