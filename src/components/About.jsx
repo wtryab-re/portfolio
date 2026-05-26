@@ -25,20 +25,16 @@ export default function About() {
   ];
 
   const about = [
-    `  I'm Warda, a third culture child, Pakistani with a hint of Emirati.
-            I started computer science because my dad wanted me to
-            do it.
+    `  I'm Warda, a third culture child, Pakistani with a hint of Emirati. I started studying computer science in university.
             `,
-    `I've always wanted to visit the the Netherlands because they have fields of my favourite flower - tulips`,
-    `My dream company to work for is Netflix,  because I love media -- TV
-            shows, movies, anime, cartoons, comics, manga, books, art. Anything that only humans are capable of creating is something I want to be part of.
+    `I've always wanted to visit the the Netherlands because they have fields of my favourite flower - tulips and a Miffy museum`,
+    `I love media -- TV
+            shows, movies, anime, cartoons, comics, manga, books, art. I'm a writer too! Check me out on Medium as @warites18. Anything that only humans are capable of creating is something I want to be a part of.
             `,
-    `I'm into archery, poetry, art, tennis, volleyball. I
-            like acting too, so maybe one day you'll see me on a Netflix show?
+    `I'm into speaking, archery, farming, poetry, art, tennis, volleyball and baking banana bread. I've been told I embody a frog's chaotic energy.
             `,
-    `But most importantly I love learning about new things, in my heart
-            of hearts I am an academic. I'd probably be one forever if I could.
-          
+    `I love learning about new things, in my heart
+            of hearts I am an academic. I'd probably be one forever if I could. I'll be going to Oxford University soon! 
        `,
   ];
 
@@ -47,7 +43,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-slate-800">about me</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
         <p className="  md:text-base text-sm">
           {about.map((t) => {
             return <span className="pb-4 block">{t}</span>;

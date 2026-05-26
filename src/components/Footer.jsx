@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-center p-9">
+    <footer className="text-center p-9 mt-5 text-white bg-gray-900">
       <div className="flex items-center justify-evenly">
         <a
           href="mailto:wtryab@gmail.com"

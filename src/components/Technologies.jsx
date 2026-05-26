@@ -5,27 +5,27 @@ import { BiLogoTypescript } from "react-icons/bi";
 
 export default function Technologies() {
   const techs = [
-    { name: "Python", icon: <FaPython className="w-8 h-8 text-blue-600" /> },
+    { name: "Python", icon: <FaPython className="w-8 h-8 " /> },
     {
       name: "Scikit-Learn",
-      icon: <SiScikitlearn className="w-8 h-8 text-orange-500" />,
+      icon: <SiScikitlearn className="w-8 h-8 " />,
     },
     { name: "SQL", icon: <TbSql className="w-8 h-8 text-gray-700" /> },
-    { name: "AWS", icon: <FaAws className="w-8 h-8 text-amber-500" /> },
+    { name: "AWS", icon: <FaAws className="w-8 h-8" /> },
     {
       name: "PyTorch",
-      icon: <SiPytorch className="w-8 h-8 text-orange-600" />,
+      icon: <SiPytorch className="w-8 h-8 " />,
     },
     {
       name: "TensorFlow",
-      icon: <SiTensorflow className="w-8 h-8 text-orange-400" />,
+      icon: <SiTensorflow className="w-8 h-8 " />,
     },
     {
       name: "TypeScript",
-      icon: <BiLogoTypescript className="w-8 h-8 text-blue-500" />,
+      icon: <BiLogoTypescript className="w-8 h-8 " />,
     },
-    { name: "React", icon: <FaReact className="w-8 h-8 text-cyan-400" /> },
-    { name: "Node.js", icon: <FaNode className="w-8 h-8 text-green-600" /> },
+    { name: "React", icon: <FaReact className="w-8 h-8 " /> },
+    { name: "Node.js", icon: <FaNode className="w-8 h-8 " /> },
   ];
 
   return (
