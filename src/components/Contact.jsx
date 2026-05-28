@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className=" py-6 px-20">
+    <section id="contact" className=" px-20 mb-10">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-slate-800">contact me</h2>
       </div>

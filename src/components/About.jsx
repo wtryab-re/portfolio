@@ -29,17 +29,17 @@ export default function About() {
             `,
     `I've always wanted to visit the the Netherlands because they have fields of my favourite flower - tulips and a Miffy museum`,
     `I love media -- TV
-            shows, movies, anime, cartoons, comics, manga, books, art. I'm a writer too! Check me out on Medium as @warites18. Anything that only humans are capable of creating is something I want to be a part of.
+            shows, movies, anime, cartoons, comics, manga, books, art. I write too. Anything that only humans are capable of creating is something I want to be a part of.
             `,
-    `I'm into speaking, archery, farming, poetry, art, tennis, volleyball and baking banana bread. I've been told I embody a frog's chaotic energy.
+    `I'm into speaking, archery, farming, poetry, art, tennis, volleyball and baking banana bread. I've been told I embody the essence of a frog.
             `,
     `I love learning about new things, in my heart
-            of hearts I am an academic. I'd probably be one forever if I could. I'll be going to Oxford University soon! 
+            of hearts I am an academic. I'd probably be one forever if I could. Oxford University has been my childhood dream, and I hope to do a masters there one day. 
        `,
   ];
 
   return (
-    <section id="about" className=" py-12 px-20">
+    <section id="about" className="  px-20">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-slate-800">about me</h2>
       </div>

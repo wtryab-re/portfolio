@@ -47,9 +47,13 @@ export default function App() {
         >
           <Header />
           <Home />
+          <hr className="mx-10 my-10" />
           <Technologies />
+          <hr className="mx-10 my-10 mt-15" />
           <Projects />
+          <hr className="mx-10 my-10" />
           <About />
+          <hr className="mx-10 my-10" />
           <Contact />
           <Footer />
         </div>

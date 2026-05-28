@@ -2,7 +2,11 @@ export default function Header() {
   const list = ["home", "technologies", "projects", "about", "contact"];
   const create_li = () => {
     return list.map((item) => (
-      <li class=" duration-200" key={item}>
+      <li
+        class=" duration-200"
+        key={item}
+        className="hover:transform-3d hover:scale-120 transition duration-200"
+      >
         <a href={`#${item.toLowerCase()}`}>{item}</a>
       </li>
     ));
