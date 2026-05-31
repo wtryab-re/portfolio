@@ -24,7 +24,7 @@ export default function Loader({ isLoading }) {
               key={index}
               className="absolute w-[14px] h-[28px] bg-white opacity-10 animate-pulse-fade"
               style={{
-                border: "2px solid black",
+                border: "1px solid black",
                 borderRadius: "50% 50% 50% 50% / 40% 40% 60% 60%",
                 transformOrigin: `center ${spacingOffset}px`,
                 top: `${48 - spacingOffset}px`,
