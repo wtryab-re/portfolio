@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { CiHeart } from "react-icons/ci";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -83,7 +85,7 @@ export default function Home() {
               Feel free to say hello if you want to collaborate on a project!
             </span>
           </p>
-          <div className="flex gap-4 mt-4 max-w-lg justify-center ">
+          <div className="flex gap-4 mt-4 max-w-lg justify-center items-center ">
             <FaLinkedin
               size={"2.5em"}
               onClick={() =>
@@ -92,26 +94,19 @@ export default function Home() {
                   "_blank",
                 )
               }
-              style={{ cursor: "pointer", transition: "transform 0.2s" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.2)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-              }}
+              className="hover:scale-120 transition-transform duration-200 ease-in-out cursor-pointer"
             />
             <FaGithub
               size={"2.5em"}
               onClick={() =>
                 window.open("https://github.com/wtryab-re", "_blank")
               }
-              style={{ cursor: "pointer", transition: "transform 0.2s" }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.2)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-              }}
+              className="hover:scale-120 transition-transform duration-200 ease-in-out cursor-pointer"
+            />
+            <CiHeart
+              size={"2.7em"}
+              className="hover:scale-120 transition-transform duration-200 ease-in-out cursor-pointer "
+              fill
             />
           </div>
         </div>
