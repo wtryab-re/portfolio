@@ -28,7 +28,7 @@ export default function Footer() {
           className="px-3 py-1 rounded-full hover:transform-3d
           hover:scale-120 duration-200
 "
-          href="Warda_Tayyeb_PK.pdf"
+          href="Warda_Tayyeb_PK_resume.pdf"
           download={"WardaTayyeb_resume.pdf"}
         >
           Resume

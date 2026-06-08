@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { CiHeart } from "react-icons/ci";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
@@ -102,11 +101,6 @@ export default function Home() {
                 window.open("https://github.com/wtryab-re", "_blank")
               }
               className="hover:scale-120 transition-transform duration-200 ease-in-out cursor-pointer"
-            />
-            <CiHeart
-              size={"2.7em"}
-              className="hover:scale-120 transition-transform duration-200 ease-in-out cursor-pointer "
-              fill
             />
           </div>
         </div>

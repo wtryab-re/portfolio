@@ -9,14 +9,14 @@ export default function Projects() {
       image_url: "stock.jpg",
     },
     {
-      title: "Agent Forge 2.0",
+      title: "Gen6.ai",
       desc: "AI agent orchestration platform, that allows users to build, deploy, and monetize autonomous AI agents without coding. ",
       what_i_did:
         "manual testing, documentation, created an insightful frontend of the admin panel",
       tech_used: "python, react, typescript",
       image_url: "stock.jpg",
 
-      url: "https://aitech.io/agentforge",
+      url: "https://gen6.ai/",
     },
     {
       title: "Spite Study",
