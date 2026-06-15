@@ -47,7 +47,7 @@ export default function Background_GIF({ setisCanvasReady }) {
         uAmplitude={1}
         uDensity={1.3}
         uFrequency={5.5}
-        uSpeed={0.001}
+        uSpeed={0}
         uStrength={4}
         uTime={0}
         wireframe={false}
