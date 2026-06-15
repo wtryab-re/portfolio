@@ -43,7 +43,7 @@ export default function Technologies() {
           {techs.map((tech, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center py-4 px-2 rounded-xl shadow-sm hover:shadow-md transition-shadow h-28"
+              className="flex flex-col items-center justify-center py-4 px-2 rounded-xl shadow-sm h-28"
             >
               {tech.icon}
               <p className="mt-2 font-medium  text-center text-xs sm:text-sm truncate w-full px-1">
