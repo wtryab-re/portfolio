@@ -28,8 +28,8 @@ export default function Footer() {
           className="px-3 py-1 rounded-full hover:transform-3d
           hover:scale-120 duration-200
 "
-          href="Warda_Tayyeb_PK_resume.pdf"
-          download={"WardaTayyeb_resume.pdf"}
+          href="https://drive.google.com/file/d/1CFC5H3jxSTN5s1igDOTvvveHIHLKIYa0/view?usp=sharing"
+          target="_blank"
         >
           Resume
         </a>
