@@ -28,7 +28,7 @@ export default function Footer() {
           className="px-3 py-1 rounded-full hover:transform-3d
           hover:scale-120 duration-200
 "
-          href="https://drive.google.com/file/d/1CFC5H3jxSTN5s1igDOTvvveHIHLKIYa0/view?usp=sharing"
+          href="https://docs.google.com/document/d/1b5pZn1FFIAiQYE-Sap6UrKKeK6M9qrnjbO9fgbLOL6c/edit?usp=sharing"
           target="_blank"
         >
           Resume
@@ -37,7 +37,7 @@ export default function Footer() {
           className="px-3 py-1 rounded-full hover:transform-3d
           hover:scale-120 duration-200
 "
-          href="https://www.linkedin.com/in/warda-tayyeb-027602234/"
+          href="https://www.linkedin.com/in/warda-tayyeb"
           target="_blank"
         >
           LinkedIn

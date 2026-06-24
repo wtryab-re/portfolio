@@ -89,7 +89,7 @@ export default function Home() {
               size={"2.5em"}
               onClick={() =>
                 window.open(
-                  "https://www.linkedin.com/in/warda-tayyeb-027602234/s",
+                  "https://www.linkedin.com/in/warda-tayyeb",
                   "_blank",
                 )
               }
