@@ -7,6 +7,7 @@ export default function Projects() {
         "Trained & evaluated the model. Designed & created all the web and mobile app interfaces",
       tech_used: "python, react, react native, expo",
       image_url: "stock.jpg",
+      url: "https://pulmovision.vercel.app/",
     },
     {
       title: "Gen6.ai",
